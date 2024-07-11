@@ -150,3 +150,4 @@ RUN pip install \
     'langchain_cohere'
 
 CMD ["jupyterhub","--generate-config","-f","/etc/jupyterhub/jupyterhub_config.py"]
+CMD ["jupyterhub"]
