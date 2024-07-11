@@ -149,5 +149,5 @@ RUN pip install \
     'langchain_openai' \
     'langchain_cohere'
 
-CMD ["jupyterhub","--generate-config","-f","/etc/jupyterhub/jupyterhub_config.py"]
-CMD ["jupyterhub"]
+CMD ["jupyterhub","--generate-config","/etc/jupyterhub/jupyterhub_config.py"]
+CMD ["jupyterhub","-f","/etc/jupyterhub/jupyterhub_config.py"]
