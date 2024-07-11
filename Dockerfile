@@ -143,4 +143,10 @@ RUN --mount=type=cache,from=wheel-builder,source=/src/jupyterhub/wheelhouse,targ
     python3 -m pip install --no-compile --no-cache-dir --upgrade setuptools pip \
  && python3 -m pip install --no-compile --no-cache-dir /tmp/wheelhouse/*
 
+RUN pip install \
+    'jupyter-ai' \
+    'langchain_mistralai' \
+    'langchain_openai' \
+    'langchain_cohere'
+
 CMD ["jupyterhub"]
