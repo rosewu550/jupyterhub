@@ -149,10 +149,7 @@ RUN pip install \
     'langchain_openai' \
     'langchain_cohere' \
     'jupyterhub-nativeauthenticator' \
-    'jupyterlab_sql'
-
-RUN jupyter serverextension enable jupyterlab_sql --py --sys-prefix
-RUN jupyter lab build
+    'jupysql'
 
 RUN adduser alphaxx; \
     echo 'alphaxx:10055pp' | chpasswd
