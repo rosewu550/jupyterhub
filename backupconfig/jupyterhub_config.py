@@ -1594,7 +1594,7 @@ c.Authenticator.allow_existing_users = True
 #  .. versionchanged:: 1.2
 #      `Authenticator.whitelist` renamed to `allowed_users`
 #  Default: set()
-c.Authenticator.allowed_users = {"alphaxx"}
+# c.Authenticator.allowed_users = {"alphaxx"}
 
 ## Is there any allow config?
 #  
@@ -1840,4 +1840,3 @@ c.Authenticator.allowed_users = {"alphaxx"}
 #  Default: 4
 # c.CryptKeeper.n_threads = 4
 c.LocalAuthenticator.create_system_users = True
-c.DummyAuthenticator.password = "10055pp"
