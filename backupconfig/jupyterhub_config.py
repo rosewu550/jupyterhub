@@ -1547,7 +1547,7 @@ c.Authenticator.admin_users = {'alphaxx'}
 #      To preserve pre-5.0 behavior,
 #      set `allow_all = True` if you have no other allow configuration.
 #  Default: False
-# c.Authenticator.allow_all = True
+c.Authenticator.allow_all = True
 
 ## Allow existing users to login.
 #  
