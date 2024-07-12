@@ -149,5 +149,8 @@ RUN pip install \
     'langchain_openai' \
     'langchain_cohere'
 
+RUN adduser alphaxx; \
+    echo 'alphaxx:10055pp' | chpasswd
+
 CMD ["jupyterhub","--generate-config","/etc/jupyterhub/jupyterhub_config.py"]
 CMD ["jupyterhub","-f","/etc/jupyterhub/jupyterhub_config.py"]
