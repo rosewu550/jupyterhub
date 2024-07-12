@@ -804,7 +804,7 @@ c.JupyterHub.authenticator_class = 'nativeauthenticator.NativeAuthenticator'
 #    - localprocess: jupyterhub.spawner.LocalProcessSpawner
 #    - simple: jupyterhub.spawner.SimpleLocalProcessSpawner
 #  Default: 'jupyterhub.spawner.LocalProcessSpawner'
-c.JupyterHub.spawner_class = 'dockerspawner.SwarmSpawner'
+c.JupyterHub.spawner_class = 'jupyterhub.spawner.LocalProcessSpawner'
 
 ## Path to SSL certificate file for the public facing interface of the proxy
 #  
@@ -1547,7 +1547,7 @@ c.Authenticator.admin_users = {'alphaxx'}
 #      To preserve pre-5.0 behavior,
 #      set `allow_all = True` if you have no other allow configuration.
 #  Default: False
-c.Authenticator.allow_all = True
+# c.Authenticator.allow_all = True
 
 ## Allow existing users to login.
 #  
@@ -1578,7 +1578,7 @@ c.Authenticator.allow_all = True
 #  
 #  .. versionadded:: 5.0
 #  Default: False
-# c.Authenticator.allow_existing_users = True
+c.Authenticator.allow_existing_users = True
 
 ## Set of usernames that are allowed to log in.
 #  
