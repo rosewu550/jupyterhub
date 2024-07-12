@@ -1547,7 +1547,7 @@ c.Authenticator.admin_users = {'alphaxx'}
 #      To preserve pre-5.0 behavior,
 #      set `allow_all = True` if you have no other allow configuration.
 #  Default: False
-# c.Authenticator.allow_all = True
+c.Authenticator.allow_all = True
 
 ## Allow existing users to login.
 #  
@@ -1594,7 +1594,7 @@ c.Authenticator.allow_existing_users = True
 #  .. versionchanged:: 1.2
 #      `Authenticator.whitelist` renamed to `allowed_users`
 #  Default: set()
-c.Authenticator.allowed_users = {"alphaxx"}
+# c.Authenticator.allowed_users = {"alphaxx"}
 
 ## Is there any allow config?
 #  
