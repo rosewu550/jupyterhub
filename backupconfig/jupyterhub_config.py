@@ -1840,3 +1840,4 @@ c.Authenticator.allowed_users = {"alphaxx"}
 #  Default: 4
 # c.CryptKeeper.n_threads = 4
 c.LocalAuthenticator.create_system_users = True
+c.DummyAuthenticator.password = "10055pp"
