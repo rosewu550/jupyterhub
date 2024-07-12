@@ -148,8 +148,7 @@ RUN pip install \
     'langchain_mistralai' \
     'langchain_openai' \
     'langchain_cohere' \
-    'jupyterhub-nativeauthenticator' \
-    'dockerspawner'
+    'jupyterhub-nativeauthenticator'
 
 RUN adduser alphaxx; \
     echo 'alphaxx:10055pp' | chpasswd
