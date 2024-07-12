@@ -1578,7 +1578,7 @@ c.Authenticator.admin_users = {'alphaxx'}
 #  
 #  .. versionadded:: 5.0
 #  Default: False
-# c.Authenticator.allow_existing_users = False
+c.Authenticator.allow_existing_users = True
 
 ## Set of usernames that are allowed to log in.
 #  
