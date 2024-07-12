@@ -1578,7 +1578,7 @@ c.Authenticator.admin_users = {'alphaxx'}
 #  
 #  .. versionadded:: 5.0
 #  Default: False
-c.Authenticator.allow_existing_users = True
+# c.Authenticator.allow_existing_users = True
 
 ## Set of usernames that are allowed to log in.
 #  
@@ -1839,4 +1839,3 @@ c.Authenticator.allow_existing_users = True
 ## The number of threads to allocate for encryption
 #  Default: 4
 # c.CryptKeeper.n_threads = 4
-c.LocalAuthenticator.create_system_users = True
