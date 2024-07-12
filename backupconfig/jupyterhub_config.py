@@ -1839,3 +1839,4 @@ c.Authenticator.allowed_users = {"alphaxx"}
 ## The number of threads to allocate for encryption
 #  Default: 4
 # c.CryptKeeper.n_threads = 4
+c.LocalAuthenticator.create_system_users = True
